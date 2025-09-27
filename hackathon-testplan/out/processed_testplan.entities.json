@@ -1,0 +1,44 @@
+{
+  "title": "",
+  "rails": [
+    {
+      "name": "327+3V3",
+      "voltage": 3.0,
+      "tolerance_mv": 100
+    },
+    {
+      "name": "327+5V",
+      "voltage": 5.0,
+      "tolerance_mv": 100
+    }
+  ],
+  "oscillators": [
+    {
+      "ref": "Y1",
+      "frequency_hz": 32000000.0,
+      "tolerance_hz": 100000
+    }
+  ],
+  "functional_tests": [
+    {
+      "name": "Test Point Verification",
+      "command": "check_test_points",
+      "expected": "All test points accessible"
+    },
+    {
+      "name": "Connector Interface Test",
+      "command": "test_connectors",
+      "expected": "All connectors functional"
+    },
+    {
+      "name": "Power-On Self Test",
+      "command": "post",
+      "expected": "PASS"
+    },
+    {
+      "name": "Communication Test",
+      "command": "comm_test",
+      "expected": "All interfaces responsive"
+    }
+  ]
+}
