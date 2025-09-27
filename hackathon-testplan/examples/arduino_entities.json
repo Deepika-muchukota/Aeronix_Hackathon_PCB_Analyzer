@@ -1,0 +1,14 @@
+{
+  "title": "Arduino Uno R3",
+  "rails": [
+    {"name": "+5V", "voltage": 5.0, "tolerance_mv": 100},
+    {"name": "+3V3", "voltage": 3.3, "tolerance_mv": 100}
+  ],
+  "oscillators": [
+    {"ref": "Y1", "frequency_hz": 16000000, "tolerance_hz": 100000}
+  ],
+  "functional_tests": [
+    {"name": "Blink", "command": "upload_blink", "expected": "LED toggles 1 Hz"},
+    {"name": "Serial Echo", "command": "serial_echo", "expected": "Echoes input at 115200 baud"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Clemson LoRa Car Radio",
+  "rails": [
+    {"name": "PWR_JACK", "voltage": 5.0, "tolerance_mv": 100},
+    {"name": "+3V3", "voltage": 3.3, "tolerance_mv": 100},
+    {"name": "+3V3_RF", "voltage": 3.3, "tolerance_mv": 100}
+  ],
+  "oscillators": [
+    {"ref": "Y1", "frequency_hz": 16000000, "tolerance_hz": 100000},
+    {"ref": "Y2", "frequency_hz": 32000000, "tolerance_hz": 100000}
+  ],
+  "functional_tests": [
+    {"name": "Full BIT", "command": "bit", "expected": "PASS"},
+    {"name": "LoRa BIT", "command": "bit.lora", "expected": "PASS"},
+    {"name": "GPS BIT", "command": "bit.gps", "expected": "PASS"},
+    {"name": "IMU BIT", "command": "bit.imu", "expected": "PASS"},
+    {"name": "I2C BIT", "command": "bit.i2c", "expected": "PASS"},
+    {"name": "GPS Status", "command": "gps.status", "expected": "Readable status"},
+    {"name": "IMU Status", "command": "imu.status", "expected": "Readable status"},
+    {"name": "SPI Read", "command": "spi.read <dev> <bytes>", "expected": "Returns <bytes> from <dev>"}
+  ]
+}
