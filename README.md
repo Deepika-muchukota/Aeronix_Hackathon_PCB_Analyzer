@@ -2,6 +2,8 @@
 
 ## Hackathon Test Plan Generator
 
+## By: Deepika Muchukota, Yiqiao Huang, Vaishnavi Vijayaraghaven, and Shree Varaa Mangai V
+
 A complete hardware bring-up/test plan generator with CLI and web interface, developed for the Aeronix Ignite Hackathon at University of Florida.
 
 ### Features
